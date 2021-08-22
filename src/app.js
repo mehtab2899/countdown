@@ -11,7 +11,6 @@ const formatTime = (time) => {
 const countdownFun = () => {
   let countDownDate = new Date("28 oct 2021");
   let currentDate = new Date();
-  console.log(countDownDate, currentDate);
 
   const totalSeconds = (countDownDate - currentDate) / 1000;
 

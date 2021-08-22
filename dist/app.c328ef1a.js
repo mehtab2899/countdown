@@ -131,7 +131,6 @@ var formatTime = function formatTime(time) {
 var countdownFun = function countdownFun() {
   var countDownDate = new Date("28 oct 2021");
   var currentDate = new Date();
-  console.log(countDownDate, currentDate);
   var totalSeconds = (countDownDate - currentDate) / 1000;
   var days = Math.floor(totalSeconds / 3600 / 24);
   var hours = Math.floor(totalSeconds / 3600) % 24;
@@ -175,7 +174,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59532" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61030" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
